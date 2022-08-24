@@ -37,4 +37,6 @@ public class SupplierService {
 	public Supplier findByUsername(String username) {
 		return  this.supplierrepository.findByUsername(username);
 	}
+	
+
 }

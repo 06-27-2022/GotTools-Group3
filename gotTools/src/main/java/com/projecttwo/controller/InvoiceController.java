@@ -11,6 +11,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.projecttwo.Service.InvoiceService;
+//import com.projecttwo.Service.SuppliesService;
 import com.projecttwo.model.Invoice;
 
 @RestController("invoiceController")
@@ -19,10 +20,13 @@ public class InvoiceController {
 
 	@Autowired
 	private InvoiceService invoiceservice;
+//	private SuppliesService suppliesservice;
 	
 	@PostMapping("/new")
 	public void save(@RequestBody Invoice invoice) {
 		this.invoiceservice.save(invoice);
+//		this.suppliesservice.update(invoice);
+		
 	}
 	
 	@PostMapping("/remove")

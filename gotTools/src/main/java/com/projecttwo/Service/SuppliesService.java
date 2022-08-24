@@ -5,6 +5,7 @@ import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import com.projecttwo.model.Invoice;
 import com.projecttwo.model.Supplies;
 import com.projecttwo.repository.SuppliesRepository;
 
@@ -36,5 +37,12 @@ public class SuppliesService {
 	
 	public List<Supplies> findByCategory(String category) {
 		return this.suppliesRepository.findByCategory(category);
+	}
+	
+	public void update(Invoice invoice) {
+		Supplies[] supplies = invoice.getSupplies().toArray(new Supplies[invoice.getSupplies().size()]);
+		for(Supplies s : supplies) {
+			suppliesRepository.save(s);
+		}
 	}
 }
