@@ -10,6 +10,7 @@ import javax.persistence.ManyToOne;
 import javax.persistence.SequenceGenerator;
 import javax.persistence.Table;
 
+
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
@@ -38,6 +39,8 @@ public class Supplies {
 	private String description;
 	@Column(name = "supplies_rating")
 	private float rating;
+	@Column(name = "supplies_picture")
+	private byte[] picture;
 	@ManyToOne
 	@JoinColumn(name = "supply_supplier")
 	private Supplier supplier;
