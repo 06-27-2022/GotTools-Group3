@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react'
 import axios from 'axios'
 import userEvent from '@testing-library/user-event'
 
-export default function Home() {
+export default function ViewAll() {
     const [users, setUsers]=useState ([])
     useEffect (()=>{
         loadUsers();
@@ -14,6 +14,8 @@ export default function Home() {
         setUsers(result.data);
      };
   return (
+
+    <div className='main'>
     <div className='container'>
         <div className='py-4'>
         <table className="table border shadow">
@@ -51,6 +53,6 @@ export default function Home() {
 </table>
 
         </div>
-    </div>
+    </div></div>
   )
 }

@@ -1,40 +1,61 @@
 import React from 'react';
 import {Link, NavLink} from "react-router-dom";
 
+import logo from './images/Logo1.png';
+
+
+
 export default function Navbar() {
     return (
-        <div>
-          <nav className="navbar navbar-expand-lg navbar-dark bg-primary">
+        
+
+
+          <nav className="navbar navbar-expand-lg navbar-dark bg-primary shadow  ; ;">
 
             
   <div class="container-fluid">
-    <a class="navbar-brand" href="/">GotTools</a>
+
+        <div>
+             <img src={logo} alt="this is logo" />
+        </div>
+    <a className="navbar-brand m-4" href="/"><h1 className='text-dark fw-bolder font-arial'>GotTools</h1></a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarNav">
-      <ul class="navbar-nav">
-        <li class="nav-item">
+      <ul class=" h5 navbar-nav fw-bolder ">
+      <div className="vr p-1"></div>
+        <li class="nav-item shadow" >
           <a class="nav-link active" aria-current="page" href="/findall">All Users</a>
         </li>
-        <li class="nav-item">
-        <a class="nav-link active" href="/invoice">Purchas Order</a>
+        <div className="vr p-1 color-dark"></div>
+        <li class="nav-item shadow">
+        <a class="nav-link active" href="/invoice">Purchase Order</a>
         </li>
-        <li class="nav-item">
+        <div className="vr p-1 color-dark"></div>
+        <li class="nav-item shadow">
         <a class="nav-link active" href="/">Customers</a>
         </li>
-        <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="/">All Users</a>
-          
-          
+        <div className="vr p-1 color-dark"></div>
+        <li class="nav-item shadow">
+          <a class="nav-link active" aria-current="page" href="/">Suppliers</a>
+             
         </li>
+        
+        
+        <div className="vr p-1 color-dark"></div>
+        <li class="nav-item shadow">
+          <a class="nav-link active" aria-current="page" href="/">Inventory</a>
+             
+        </li>
+        <div className="vr p-1 color-dark"></div>
         
       </ul>
       
 
     </div>
 
-      <button 
+    {/*   <button 
                     className="navbar-toggler"
                     type="button" 
                     data-bs-toggle="collapse" 
@@ -42,14 +63,14 @@ export default function Navbar() {
                     aria-controls="navbarSupportedContent" aria-expanded="false" 
                     aria-label="Toggle navigation">
                     <span className="navbar-toggler-icon"></span>
-                    </button>
+                    </button> */}
 
-                    <Link className="btn btn-outline-light" to="/adduser">Add User</Link>
-                    <Link className="btn btn-outline-light" to="/adduser">Login</Link>
+                    <NavLink className="btn btn-outline-light m-1" to="/adduser">AddUser</NavLink>
+                    <NavLink className="btn btn-outline-light m-1" to="/loginpage">Login</NavLink>
   </div>
 
 </nav>
                   
-            </div>
+            
     )
 }

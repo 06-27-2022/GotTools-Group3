@@ -27,6 +27,7 @@ export default function AddUser() {
     };
 
     return (
+        <div className='main'>
         <div className='container'>
             <div className='row'>
                 <div className='col-md-6 offset-md-3 border rounded p-4 mt-5 shadow'>
@@ -94,6 +95,7 @@ export default function AddUser() {
                   </form>
                 </div>
             </div>
+        </div>
         </div>
     )
 }
