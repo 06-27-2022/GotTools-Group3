@@ -1,7 +1,6 @@
 # GotTools-Group3
 ---
 Group 3 Project 2
->User Stories:
-- Before this, looking for materials and parts I needed was very time consuming.
-I was spending a good part of my day just searching for the parts or tools I needed. 
-Now with Got Tools I can easily input the supplies I need and it will come up with all the whereabouts of whats in stock for me!
+>Overview:
+- GotTools is designed with the busy contractor in mind. Our simple strategy allows contractors to order materials, tools, and supplies without making any phone calls or trips to local hardware suppliers. GotTools allows to contractors to see and order available supplies directly from supplies and set up invoices for the order. Also allowing contractors to leave reviews on the individual supplies ordered for all users to see.
+- Along with these key features, the user friendly website allows for both contractors and suppliers to easily navigate page to page. Keeping it simple for our users has been one of the goals for this project as well.
