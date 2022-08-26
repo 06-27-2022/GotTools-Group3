@@ -3,6 +3,7 @@ package com.projecttwo.controller;
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
@@ -15,6 +16,7 @@ import com.projecttwo.Service.InvoiceService;
 import com.projecttwo.model.Invoice;
 
 @RestController("invoiceController")
+@CrossOrigin ("http://localhost:3000")
 @RequestMapping(path = "/invoice")
 public class InvoiceController {
 

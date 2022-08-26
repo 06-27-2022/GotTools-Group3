@@ -4,7 +4,8 @@ body {
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
   -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  -moz-osx-font-smoothing: grayscale; 
+  background-color: azure;
 }
 
 code {
@@ -18,16 +19,16 @@ code {
   background-color: #006efd;
   position:absolute;
   bottom: 0;
-  left: 20;
+  left: 20px;
   width: 100%;
   box-shadow:#080808;
 }
 
 .main{
-  position:relative;
+  position:static;
   padding-bottom: 50px;
   margin-bottom: 1px;
-  background-color: azure;
+ 
 }
 
 .landingpage{
