@@ -41,15 +41,35 @@ export default function Navbar() {
           <a class="nav-link active" aria-current="page" href="/">Suppliers</a>
              
         </li>
-        
-        
+
         <div className="vr p-1 color-dark"></div>
         <li class="nav-item shadow">
-          <a class="nav-link active" aria-current="page" href="/">Inventory</a>
-             
+          <a class="nav-link active" aria-current="page" href="/">Suppliers</a>             
+        </li>    
+        <div className="vr p-1 color-dark"></div>
+
+
+        <li class="nav-item shadow">
+          <a class="nav-link active" aria-current="page" href="/test">Test</a>             
         </li>
         <div className="vr p-1 color-dark"></div>
         
+        <li class="nav-item shadow">
+          <a class="nav-link active" aria-current="page" href="/testSup">Test Supllier</a>             
+        </li>
+        <div className="vr p-1 color-dark"></div>
+        
+        <li class="nav-item shadow">
+          <a class="nav-link active" aria-current="page" href="/testItems">Test Items</a>             
+        </li>
+        <div className="vr p-1 color-dark"></div>
+        
+        <li class="nav-item shadow">
+          <a class="nav-link active" aria-current="page" href="/testCust">Test Customer</a>             
+        </li>
+        <div className="vr p-1 color-dark"></div>
+        
+
       </ul>
       
 

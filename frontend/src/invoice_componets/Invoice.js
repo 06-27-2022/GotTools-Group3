@@ -4,6 +4,8 @@ import logo from './images/Logo1.png';
 export default function Invoice() {
 const handlePrint =() => {
  window.print()
+
+
  
 
 }
