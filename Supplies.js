@@ -26,9 +26,6 @@ export default function ViewAll() {
       <th scope="col">Quantity</th>
       <th scope="col">Price</th>
       <th scope="col">Description</th>
-      <th scope="col">Rating</th>
-      <th scope="col">Picture</th>
-      <th scope="col">Supplier</th>
       
     </tr>
   </thead>
@@ -43,13 +40,8 @@ export default function ViewAll() {
       <td>{user.quantity}</td>
       <td>{user.price}</td>
       <td>{user.description}</td>
-      <td>{user.rating}</td>
-      <td>{user.picture}</td>
-      <td>{user.supplier}</td>
       <td>
-        <button className="btn btn-primary mx-2">View</button>
-        <button className="btn btn-outline-primary mx-2">Edit</button>
-        <button className="btn btn-danger mx-2">Delete</button>
+        <button className="btn btn-primary mx-2">Add To Cart</button>
       </td>
       
     </tr> 
